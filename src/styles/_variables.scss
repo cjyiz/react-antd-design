@@ -1,0 +1,96 @@
+// 这里定义了基础样式变量
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #0000 !default;
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #fadb14 !default;
+$green: #52c41a !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo,
+  Courier, monospace;
+$font-family-base: $font-family-sans-serif;
+
+// 字体大小
+$font-size-base: 1rem !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+$font-weight-base: $font-weight-normal;
+
+$line-height-base: 1.5 !default;
+$line-height-lg: 2 !default;
+$line-height-sm: 1.25 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$link-color: $primary !default;
+$link-decoration: none !default;
+// scss内置函数,让颜色变暗
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+$body-text-align: null !default;
+
+
+// btn样式
+$btn-font-weight:400px;
+$btn-line-height:50px;
+$btn-border-width:1px;
+$btn-padding-y:20px;
+$btn-padding-x:20px;
+$btn-font-size:$h4-font-size;
+$border-radius:5px;
+$btn-box-shadow:1px;
+$btn-transition:transform(-30%,-30%);
+$btn-disabled-opacity:0.8;
+
+
+// menu
+$menu-border-width: 1px !default;
+$menu-border-color: gray !default;
+$menu-box-shadow: inset 0 1px 0 rgba($white,.15),0 1px 1px 0;
+$menu-transition: color .15s ease-in-out,gray .15s ease;
+$menu-item-padding-y: .5rem !default;
+$menu-item-padding-x:1rem !default;
+$menu-item-active-color: $primary !default;
+$menu-item-active-border-width:2px !default;
+$menu-item-disabled-color:$gray-600 !default;
