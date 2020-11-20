@@ -1,12 +1,33 @@
 // config
 @import "variables";
-// layout
+
+//layout
 @import "reboot";
 
-// mixin代码复用
-@import './mixin';
+//mixin
+@import "mixin";
 
-//button
-@import '../components/Button/style';
+// animation
+@import "animation";
+// button
+
+@import "../components/Button/style";
+
 // menu
-@import '../components/Menu/style'
+
+@import "../components/Menu/style";
+
+// icon
+@import "../components/Icon/style";
+
+//input
+@import "../components/Input/style";
+
+//auto-complete
+@import "../components/AutoComplete/style";
+
+//upload
+@import "../components/Upload/style";
+
+//progress
+@import "../components/Progress/style";
