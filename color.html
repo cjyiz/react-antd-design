@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="1200" height="1200"></canvas>
+  </body>
+  <script>
+    var canva = document.getElementById("canvas");
+    var ctx = canva.getContext("2d");
+    color1 = "rgba(208,2,27,1)";
+    stop1 = 0.35;
+    color2 = "rgba(32,96,195,1)";
+    stop2 = 1;
+    var angle = 270;
+    var x1 = 0;
+    var y1 = 0;
+    var x2 = 300;
+    var y2 = 0;
+    var radian = angle * Math.PI / 180;
+    // 角度计算
+    if(angle>180){
+        count = 1 / Math.tan(radian)
+    }else{
+        // 这里90-180度计算正确
+        count = -1 / Math.tan(radian);
+    }
+    console.log("count", count);
+    y2 = x2 * count;
+    if(y2>300){
+        x2=x2*300/y2
+        y2=300
+    }
+    // var style = ctx.createLinearGradient(x1, y1, 300, 300);
+   var  style = ctx.createRadialGradient(
+          150,150,
+          stop1* 150,
+           150,150,
+           stop2*150,
+        );
+    style.addColorStop(stop1, color1);
+    style.addColorStop(stop2, color2);
+    ctx.fillStyle = style;
+    ctx.fillRect(0, 0, 300, 900);
+  </script>
+</html>
