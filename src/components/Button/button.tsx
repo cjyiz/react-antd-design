@@ -11,7 +11,6 @@ export enum ButtonType {
   Danger = 'danger',
   Link = 'link'
 }
-
 // step2  创建接口
 // 创建的时候需要考虑可能会用到那些属性
 interface BaseButtonProps {
