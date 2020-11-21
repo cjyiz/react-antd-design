@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./styles/index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-
+// 这个入口文件
 ReactDOM.render(
   <React.StrictMode>
     <App />
