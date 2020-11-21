@@ -1,3 +1,4 @@
+// 使用Mixin来统一配置样式。其实本质就是个函数，返回一个结果。在样式css中使用@include使用mixins
 @mixin button-size($padding-y, $padding-x, $font-size, $border-raduis) {
     padding: $padding-y $padding-x;
     font-size: $font-size;
