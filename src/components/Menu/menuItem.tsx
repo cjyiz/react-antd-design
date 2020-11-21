@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import classNames from 'classnames'
 import { MenuContext } from './menu'
 export interface MenuItemProps {
-    index?: number;
+    index: number;
     disabled?: boolean;
     className?: string;
     style?: React.CSSProperties
@@ -21,7 +21,7 @@ export const MenuItem: React.FC<MenuItemProps> = (props) => {
         }
     }
     return (
-        <li className={classes} style={style}>
+        <li className={classes} style={style} onClick={handlClick}>
             {children}
         </li>
     )
